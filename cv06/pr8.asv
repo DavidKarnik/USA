@@ -1,0 +1,38 @@
+% zadani 210426, str. 54
+clear all
+clc
+
+%pr8
+% Životnost komponenty má exponenciální rozdělení se střední hodnotou 5 let. 
+% Určete pravděpodobnost, že 100 náhodně vybraných komponent bude mít 
+% v průměru životnost nižší než 4 roky.
+
+% Gauss graf
+%           -----
+%         -   |   -
+%       -     |     -
+%      /|     |       \
+%     / |     |        \
+% x ----|-----|----------
+%       4     5
+
+% 1)
+% E(X) = 5 let -> střední hodnota
+% D(X) = E(X)^2 = 25 roků^2 -> rozptyl z exponenciálního rozdělení
+
+% 2)
+% Předpoklady Centrální limitní věty
+% konečná stř. hodnota a rozptyl -> ano
+% komponenty dobu do poruchy nezávislou -> ano
+
+% budu chtít součet, nebo průměr životnosti ? -> průměr
+
+% 3)
+% -> platí CLV, průměr
+% -> normální rozdělení
+% N(střední hodnota E(X), D(X)/n) -> pro tento případ
+% N(u = 5,G^2 = 0,25)
+
+% 4)
+% norcdf(E(X),D(X),G
+norcdf(4,5,0.5);

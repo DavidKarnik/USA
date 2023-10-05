@@ -1,6 +1,6 @@
 # USA
 Úvod do statistické analýzy 2023 - TUL
-letní semestr
+4. semestr
 
 
 Matlab scripts for subject USA
